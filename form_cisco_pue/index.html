@@ -1,10 +1,10 @@
-[title size="s"]Formulario de Soporte Microsoft Imagine Academy[/title]
+[title size="s"]Formulario de Soporte Cisco Networking Academy[/title]
 <div class="container-fluid">
 
     <div class="row">
         <div class="col-sm-3"></div>
         <div class="col-sm-6">
-            <form class="form-horizontal" id="form_imagine" role="form" method="post" action="https://soporte.pue.es/api/new_ticket_imagine.php" enctype="multipart/form-data" onsubmit="submitform()">
+            <form class="form-horizontal" id="form_imagine" role="form" method="post" action="https://soporte.pue.es/api/new_ticket_cisco.php" enctype="multipart/form-data" onsubmit="submitform()">
 
                 <div class="form-group">
                     <label for="useremail" class="col-md-12 text-left font-weight-bold">Email</label>
@@ -22,7 +22,10 @@
                     <label for="name" class="col-md-12 text-left font-weight-bold">Nombre y Apellidos</label>
                     <input class="form-control" id="name" name="name" required="" readonly="">
                 </div>
-
+                <div class="form-group">
+                    <label for="netacadEmail" class="col-md-12 text-left font-weight-bold">Correo Netacad</label>
+                    <input class="form-control" id="netacadEmail" name="netacadEmail" required="" placeholder="ej. example@netacad.com" oninvalid="this.setCustomValidity('Por favor rellene este campo')" oninput="setCustomValidity('')">
+                </div>
                 <div class="form-group">
                     <label for="phone" class="col-md-12 text-left font-weight-bold">Teléfono de contacto <span class="text-danger"><strong>*</strong></span></label>
                     <input class="form-control" id="phone" name="phone" required="" placeholder="ej. 123 456 789" oninvalid="this.setCustomValidity('Por favor rellene este campo')" oninput="setCustomValidity('')">
@@ -32,7 +35,7 @@
 
                 <div class="form-group">
                     <label for="subject" class="col-md-12 text-left font-weight-bold">Asunto <span class="text-danger"><strong>*</strong></span></label>
-                    <input class="form-control" id="subject" name="subject" required="" placeholder="ej. Error al activar la suscripción Azure Dev Tools for Teaching" oninvalid="this.setCustomValidity('Por favor rellene este campo')" oninput="setCustomValidity('')">
+                    <input class="form-control" id="subject" name="subject" required="" placeholder="ej. Problemas de acceso a Netacad" oninvalid="this.setCustomValidity('Por favor rellene este campo')" oninput="setCustomValidity('')">
                 </div>
 
 
@@ -48,18 +51,14 @@
                                         </label>
                     <div class="col-md-12 text-left">
                         <span class="btn btn-secondary" style="width:100%"> 
-                                                <input id="uploadfiles[]" name="uploadfiles[]" type="file" class="file" multiple="" data-show-upload="true" data-show-caption="true" style="float: left">
-                                            </span>
+                            <input id="uploadfiles[]" name="uploadfiles[]" type="file" class="file" multiple="" data-show-upload="true" data-show-caption="true" style="float: left">
+                        </span>
                     </div>
                 </div>
-
                 <div class="form-group text-center">
-                    <!-- <input style="float: center" id="submitform" name="submit" type="submit" value="Enviar" class="btn btn-primary" onclick="var e=this;setTimeout(function(){e.disabled=true;e.value='Enviando...';},0);return true;"> -->
                     <input style="float: center" id="myButton" name="myButton" type="submit" value="Enviar" class="btn btn-primary">
                 </div>
-
                 <br>
-
             </form>
         </div>
         <div class="col-sm-3"></div>

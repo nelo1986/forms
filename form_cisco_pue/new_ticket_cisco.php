@@ -47,26 +47,23 @@ $name_full_zip = '/tmp/' . $random_zip;
 $name = $_POST['name'];
 $institution_name = $_POST['institution_name'];
 $phone = $_POST['phone'];
-$contract_number = $_POST['contract_number'];
-$product = $_POST['product'];
 $message = $_POST['message'];
 $subject = $_POST['subject'];
 $useremail = $_POST['useremail'];
-
+$netacadEmail = $_POST['netacadEmail'];
 
 $data = array(
 
     'Nombre_y_Apellidos'      =>      $name,
     'institution_name'       =>      $institution_name,
     'phone_contact'    =>      $phone,
-    'contract_number'      =>      $contract_number,
-    'product'                =>      $product,
     'name'        =>      $name,
-    'email'     =>      $useremail,
+    'email'     =>      $netacadEmail,
+    'netacadEmail'   => $useremail,
     'subject'   =>      $subject,
     'message'   =>      $message,
     'ip'        =>      '127.0.0.1',
-    'topicId'   =>      '26',//cisco Academy
+    'topicId'   =>      '26',//cisco Academy 26 //14 imagine
     );
 
 
