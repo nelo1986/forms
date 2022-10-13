@@ -63,7 +63,7 @@ $data = array(
     'subject'   =>      $subject,
     'message'   =>      $message,
     'ip'        =>      '127.0.0.1',
-    'topicId'   =>      '14',//cisco Academy 26 //14 imagine
+    'topicId'   =>      '26',//cisco Academy 26 //14 imagine
     );
 
 
