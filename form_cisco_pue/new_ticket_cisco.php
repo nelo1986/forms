@@ -63,7 +63,7 @@ $data = array(
     'subject'   =>      $subject,
     'message'   =>      $message,
     'ip'        =>      '127.0.0.1',
-    'topicId'   =>      '14',//cisco Academy 26 //14 imagine
+    'topicId'   =>      '26',//cisco Academy 26 //14 imagine
     );
 
 
@@ -182,7 +182,7 @@ $ticket_id = (int) $result;
 
         }
     else {
-        $ticket = "Se ha generado un ticket con el código " .$result."</br> Puede consultar el estado de su solicitud a través del enlace que habrá recibido en el siguiente correo: ".$useremail;
+        $ticket = "Se ha generado un ticket con el código " .$result."</br> Puede consultar el estado de su solicitud a través del enlace que habrá recibido en el siguiente correo: ".$netacadEmail;
         $title = "Solicitud enviada";
     }
 
