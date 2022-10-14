@@ -5,19 +5,14 @@
         <div class="col-sm-3"></div>
         <div class="col-sm-6">
             <form class="form-horizontal" id="form_imagine" role="form" method="post" action="https://soporte.pue.es/api/new_ticket_cisco.php" enctype="multipart/form-data" onsubmit="submitform()">
-
                 <div class="form-group">
                     <label for="useremail" class="col-md-12 text-left font-weight-bold">Email</label>
                     <input class="form-control" id="useremail" name="useremail" required="" readonly="">
                 </div>
-
                 <div class="form-group">
-
                     <label for="institution_name" class="col-md-12 text-left font-weight-bold">Nombre del centro</label>
                     <input class="form-control" id="institution_name" name="institution_name" required="" readonly="">
-
                 </div>
-
                 <div class="form-group">
                     <label for="name" class="col-md-12 text-left font-weight-bold">Nombre y Apellidos</label>
                     <input class="form-control" id="name" name="name" required="" readonly="">
@@ -30,21 +25,15 @@
                     <label for="phone" class="col-md-12 text-left font-weight-bold">Teléfono de contacto <span class="text-danger"><strong>*</strong></span></label>
                     <input class="form-control" id="phone" name="phone" required="" placeholder="ej. 123 456 789" oninvalid="this.setCustomValidity('Por favor rellene este campo')" oninput="setCustomValidity('')">
                 </div>
-
                 <!-- Modal -->
-
                 <div class="form-group">
                     <label for="subject" class="col-md-12 text-left font-weight-bold">Asunto <span class="text-danger"><strong>*</strong></span></label>
                     <input class="form-control" id="subject" name="subject" required="" placeholder="ej. Problemas de acceso a Netacad" oninvalid="this.setCustomValidity('Por favor rellene este campo')" oninput="setCustomValidity('')">
                 </div>
-
-
                 <div class="form-group">
                     <label for="message" class="col-md-12 text-left font-weight-bold">Mensaje <span class="text-danger"><strong>*</strong></span></label>
                     <textarea class="form-control" rows="4" required="" id="message" name="message" oninvalid="this.setCustomValidity('Por favor rellene este campo')" oninput="setCustomValidity('')"></textarea>
                 </div>
-
-
                 <div class="form-group">
                     <label class="col-md-12 text-left font-weight-bold">
                         Adjunta capturas de pantalla del problema. Puedes seleccionar varias capturas a la vez
