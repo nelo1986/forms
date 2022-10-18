@@ -1,11 +1,9 @@
 [title size="s"]Formulario de Soporte Cisco Networking Academy[/title]
 <div class="container-fluid">
-
     <div class="row">
         <div class="col-sm-3"></div>
         <div class="col-sm-6">
             <form class="form-horizontal" id="form_imagine" role="form" method="post" action="https://soporte.pue.es/api/new_ticket_cisco.php" enctype="multipart/form-data" onsubmit="submitform()">
-
                 <div class="form-group">
                     <label for="useremail" class="col-md-12 text-left font-weight-bold">Netacad contact (email)</label>
                     <input class="form-control" id="useremail" name="useremail" required="" readonly="">
@@ -32,6 +30,7 @@
                     <input class="form-control" id="phone" name="phone" required="" placeholder="ej. 123 456 789" oninvalid="this.setCustomValidity('Por favor rellene este campo')" oninput="setCustomValidity('')">
                 </div>
                 <!-- Modal -->
+<<<<<<< HEAD
                 <div class="modal fade" id="modalsolicitante" tabindex="-1" role="dialog" aria-labelledby="modalsolicitante" style="display: none;" aria-hidden="true">
                     <div class="modal-dialog modal-lg" role="document">
                         <div class="modal-content">
@@ -76,21 +75,23 @@
                         <input class="form-control" id="dispo" name="dispo" required="" placeholder="Indique disponibilidad horaria (dia - hora) para contacto telefónico" oninvalid="this.setCustomValidity('Por favor rellene este campo')" oninput="setCustomValidity('')">
                 </div>
 
+=======
+>>>>>>> 44344c82f8b1e1e5fb52bc605c3e4a864e422784
                 <div class="form-group">
                     <label for="subject" class="col-md-12 text-left font-weight-bold">Asunto <span class="text-danger"><strong>*</strong></span></label>
                         <input class="form-control" id="subject" name="subject" required="" placeholder="ej. incidencias en la plataforma" oninvalid="this.setCustomValidity('Por favor rellene este campo')" oninput="setCustomValidity('')">
                 </div>
-
-
                 <div class="form-group">
                     <label for="message" class="col-md-12 text-left font-weight-bold">Mensaje <span class="text-danger"><strong>*</strong></span></label>
                     <textarea class="form-control" rows="4" required="" id="message" name="message" oninvalid="this.setCustomValidity('Por favor rellene este campo')" oninput="setCustomValidity('')"></textarea>
                 </div>
-
-
                 <div class="form-group">
                     <label class="col-md-12 text-left font-weight-bold">
+<<<<<<< HEAD
                         Adjunta capturas de pantalla del problema. Puedes seleccionar varias capturas a la vez.
+=======
+                        Adjunta capturas de pantalla del problema. Puedes seleccionar varias capturas a la vez
+>>>>>>> 44344c82f8b1e1e5fb52bc605c3e4a864e422784
                     </label>
                     <div class="col-md-12 text-left">
                         <span class="btn btn-secondary" style="width:100%"> 
@@ -108,11 +109,7 @@
     </div>
 </div>
 
-
-
-
 <script src="https://academymembers.pue.es/course/new_ticket/get_email.php"></script>
-
 
 <script type="text/javascript">
     function submitform() {
