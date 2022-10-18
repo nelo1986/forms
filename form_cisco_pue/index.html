@@ -1,4 +1,5 @@
 [title size="s"]Formulario de Soporte Cisco Networking Academy[/title]
+<p>Ayuda formulario <a href="#modalsolicitante" data-toggle="modal" data-target="#modalsolicitante"><span class="fa fa-question-circle"></span></a></p>
 <div class="container-fluid">
     <div class="row">
         <div class="col-sm-3"></div>
@@ -13,55 +14,53 @@
                     <input class="form-control" id="institution_name" name="institution_name" required="" readonly="">
                 </div>
                 <div class="form-group">
-                    <label for="name" class="col-md-12 text-left font-weight-bold">Netacad contact (nombre y apellidos)</label>
+                    <label for="name" class="col-md-12 text-left font-weight-bold">Netacad contact (nombre y apellidos) <span class="text-danger"><strong>*</strong></span></label>
                     <input class="form-control" id="name" name="name" required="" readonly="">
                 </div>
                 <div class="form-group">
-                    <label for="nameSurnameSol" class="col-md-12 text-left font-weight-bold">Solicitante soporte (Nombre y apellidos)<span class="text-danger"><strong>*</strong></span></label>
-                        <input class="form-control" id="nameSurnameSol" name="nameSurnameSol" required="" placeholder="Indique disponibilidad horaria (dia - hora) para contacto telefónico" oninvalid="this.setCustomValidity('Por favor rellene este campo')" oninput="setCustomValidity('')">
+                    <label for="nameSurnameSol" class="col-md-12 text-left font-weight-bold">Solicitante soporte (Nombre y apellidos) <span class="text-danger"><strong>*</strong></span></label>
+                    <input class="form-control" id="nameSurnameSol" name="nameSurnameSol" required="" placeholder="Nombre y apellidos del solicitante" oninvalid="this.setCustomValidity('Por favor rellene este campo')" oninput="setCustomValidity('')">
                 </div>
                 <div class="form-group">
-                    <label for="netacadEmail" class="col-md-12 text-left font-weight-bold">Solicitante soporte (Necatad email) <a href="#modalsolicitante" data-toggle="modal" data-target="#modalsolicitante"><span class="fa fa-question-circle"></span></a>
+                    <label for="netacadEmail" class="col-md-12 text-left font-weight-bold">Solicitante soporte (Necatad email) <span class="text-danger"><strong>*</strong></span></label>
                     </label>
-                    <input class="form-control" id="netacadEmail" name="netacadEmail" required="" placeholder="ej. example@netacad.com" oninvalid="this.setCustomValidity('Por favor rellene este campo')" oninput="setCustomValidity('')">
+                    <input type="email" class="form-control" id="netacadEmail" name="netacadEmail" required="" placeholder="ej. example@netacad.com" oninvalid="this.setCustomValidity('Por favor rellene este campo')" oninput="setCustomValidity('')">
                 </div>
                 <div class="form-group">
                     <label for="phone" class="col-md-12 text-left font-weight-bold">Teléfono de contacto <span class="text-danger"><strong>*</strong></span></label>
                     <input class="form-control" id="phone" name="phone" required="" placeholder="ej. 123 456 789" oninvalid="this.setCustomValidity('Por favor rellene este campo')" oninput="setCustomValidity('')">
                 </div>
                 <!-- Modal -->
-<<<<<<< HEAD
                 <div class="modal fade" id="modalsolicitante" tabindex="-1" role="dialog" aria-labelledby="modalsolicitante" style="display: none;" aria-hidden="true">
                     <div class="modal-dialog modal-lg" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h4 class="modal-title">Netacad email</h4>
+                                <h4 class="modal-title">Instrucciones para completar la solicitud de soporte</h4>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">×</span>
                                         </button>
                             </div>
                             <div class="modal-body text-left">
-                                <p>El número de contrato se puede encontrar en cualquiera de los cinco primeros correos que Microsoft envia al dar de alta el contrato de licencias OVS. El asunto de cada unos de los correos son los siguientes:</p>
                                 <p>
+                                    Al abrir caso de soporte, y para agilizar la respuesta y resolución, por favor, <b>completa todos los
+                                    campos</b> y describe el motivo – campos Asunto y Mensaje - con la información más detallada posible.
                                 </p>
-                                <ul>
-                                    <li>
-                                        Acción requerida: el Contrato de licencia de Microsoft está listo para firma electrónica.
-                                    </li>
-                                    <li>
-                                        Confirmación de aceptación y envío de Contrato de licencias por volumen de Microsoft.
-                                    </li>
-                                    <li>
-                                        Confirmación de aceptación y envío de Contrato de licencias por volumen de Microsoft (asunto igual que el anterior pero cambia el cuerpo del mensaje).
-                                    </li>
-                                    <li>
-                                        Open Value Welcome Letter.
-                                    </li>
-                                    <li>
-                                        Open Value Order Confirmation.
-                                    </li>
-                                </ul>
-                                <p></p>
+                                <p>
+                                    <b>Solicitante de Soporte</b> (Correo electrónico en Netacad) – Indica tu correo electrónico en la plataforma Netacad.
+                                </p>
+                                <p>
+                                    <b>Solicitante</b> (Teléfono): Indica un teléfono de contacto de preferencia.
+                                </p>
+                                <p>
+                                    <b>Solicitante</b> (Disponibilidad): Indica la franja o franjas horarias – días y horas – de disponibilidad para el contacto telefónico.
+                                </p>
+                                <p>
+                                    <b>Asunto</b> – Indica brevemente el motivo de la solicitud
+                                </p>
+                                <p>
+                                    <b>Mensaje</b> – Describe el motivo de la solicitud de soporte, aportando la máxima información y detalles sobre la afectación, como nombre de la clase, correo (en Netacad) del usuario o usuarios, y cualquier referencia
+                                    que consideres relacionada. Puedes incluir uno o varios adjuntos (por ejemplo, capturas de pantalla en el último campo).
+                                </p>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-primary" data-dismiss="modal">Aceptar</button>
@@ -72,14 +71,12 @@
 
                 <div class="form-group">
                     <label for="dispo" class="col-md-12 text-left font-weight-bold">Disponibilidad horaria<span class="text-danger"><strong>*</strong></span></label>
-                        <input class="form-control" id="dispo" name="dispo" required="" placeholder="Indique disponibilidad horaria (dia - hora) para contacto telefónico" oninvalid="this.setCustomValidity('Por favor rellene este campo')" oninput="setCustomValidity('')">
+                    <input class="form-control" id="dispo" name="dispo" required="" placeholder="Indique disponibilidad horaria – días y horas – para contacto telefónico" oninvalid="this.setCustomValidity('Por favor rellene este campo')" oninput="setCustomValidity('')">
                 </div>
 
-=======
->>>>>>> 44344c82f8b1e1e5fb52bc605c3e4a864e422784
                 <div class="form-group">
                     <label for="subject" class="col-md-12 text-left font-weight-bold">Asunto <span class="text-danger"><strong>*</strong></span></label>
-                        <input class="form-control" id="subject" name="subject" required="" placeholder="ej. incidencias en la plataforma" oninvalid="this.setCustomValidity('Por favor rellene este campo')" oninput="setCustomValidity('')">
+                    <input class="form-control" id="subject" name="subject" required="" placeholder="ej. incidencias en la plataforma" oninvalid="this.setCustomValidity('Por favor rellene este campo')" oninput="setCustomValidity('')">
                 </div>
                 <div class="form-group">
                     <label for="message" class="col-md-12 text-left font-weight-bold">Mensaje <span class="text-danger"><strong>*</strong></span></label>
@@ -87,11 +84,7 @@
                 </div>
                 <div class="form-group">
                     <label class="col-md-12 text-left font-weight-bold">
-<<<<<<< HEAD
-                        Adjunta capturas de pantalla del problema. Puedes seleccionar varias capturas a la vez.
-=======
                         Adjunta capturas de pantalla del problema. Puedes seleccionar varias capturas a la vez
->>>>>>> 44344c82f8b1e1e5fb52bc605c3e4a864e422784
                     </label>
                     <div class="col-md-12 text-left">
                         <span class="btn btn-secondary" style="width:100%"> 
