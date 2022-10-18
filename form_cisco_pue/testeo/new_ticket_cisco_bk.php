@@ -51,19 +51,16 @@ $message = $_POST['message'];
 $subject = $_POST['subject'];
 $useremail = $_POST['useremail'];
 $netacadEmail = $_POST['netacadEmail'];
-$nameSurnameSol = $_POST['nameSurnameSol'];
-$dispo = $_POST['dispo'];
 
 $data = array(
 
     'Nombre_y_Apellidos'      =>      $name,
     'institution_name'       =>      $institution_name,
     'phone_contact'    =>      $phone,
-    'name'        =>      $nameSurnameSol,
+    'name'        =>      $name,
     'email'     =>      $netacadEmail,
     'netacadEmail'   => $useremail,
     'subject'   =>      $subject,
-    'dispo'        =>   $dispo,
     'message'   =>      $message,
     'ip'        =>      '127.0.0.1',
     'topicId'   =>      '26',//cisco Academy 26 //14 imagine
